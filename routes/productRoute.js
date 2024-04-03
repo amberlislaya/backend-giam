@@ -16,7 +16,7 @@ router.post("/", createProduct);
 router.get("/:id", getaProduct);
 router.post("/wishlist/:id", addToWishlist);
 router.put("/compare-product", addToCompare);
-router.put("/rating", rating);
+router.put("/rating/:id", rating);
 router.put("/:id", updateProduct);
 router.delete("/:id", deleteProduct);
 router.get("/", getAllProduct);
