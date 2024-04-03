@@ -50,7 +50,7 @@ const deleteProduct = asyncHandler(async (req, res) => {
 
 const getaProduct = asyncHandler(async (req, res) => {
 const { id } = req.params;
-    validateMongoDbId(id);
+    //validateMongoDbId(id);
 try {
 const findProduct = await Product.findById(id).populate("color");
       res.json(findProduct);
@@ -161,7 +161,11 @@ const addToCompare = asyncHandler(async (req, res) => {
 
 
 const rating = asyncHandler(async (req, res) => {
-const { _id } = req.user;
+//const { _id } = req.user;
+ console.log("gaaa");
+const _id = req.params.id;
+console.log(_id);
+console.log(req.body);
 const { star, prodId, comment } = req.body;
   try {
 const product = await Product.findById(prodId);
