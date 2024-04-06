@@ -40,7 +40,7 @@ const createOrder = async (req, res) => {
             failure: "http://localhost:3000/"
         },
         metadata:{"NumOrd":nroOrden},
-        notification_url: "https://4435-38-25-15-10.ngrok-free.app/api/payment/webhook",
+        notification_url: "https://7c95-38-25-15-10.ngrok-free.app/api/payment/webhook",
 
             }
         })
