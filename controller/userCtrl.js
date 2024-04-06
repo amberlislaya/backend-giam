@@ -431,9 +431,9 @@ const userCart = asyncHandler(async (req, res) => {
   //console.log(color);
   //console.log(quantity);
   //console.log(price);
-  //console.log(req.body);
+  console.log(req.body);
   //validateMongoDbId(_id); 
-  //console.log(id);
+  console.log(id);
   //console.log("llego");
   try {
    
@@ -524,7 +524,8 @@ const updateProductQuantityFromCart = asyncHandler(async (req, res) => {
 const getUserCart = asyncHandler(async (req, res) => {
   
   const userId = req.params.userId;
-  console.log(userId);
+ console.log(req.params);
+  console.log("holi")
   
 try {
   // Busca documentos de la colección de carritos que corresponden al usuario específico.
